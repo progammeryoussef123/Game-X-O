@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Dosis:wght@200..800&family=Ga+Maamli&family=Jaro:opsz@6..72&family=Lilita+One&family=Mouse+Memoirs&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Game X O</title>
+</head>
+<body>
+  
+    <div class="game">
+        <div class="title"><span>X O</span> Game</div>
+
+        <div class="squer" id="item1" onclick="get(this.id);"></div>
+        <div class="squer" id="item2" onclick="get(this.id);"></div>
+        <div class="squer" id="item3" onclick="get(this.id);"></div>
+
+        <div class="squer" id="item4" onclick="get(this.id);"></div>
+        <div class="squer" id="item5" onclick="get(this.id);"></div>
+        <div class="squer" id="item6" onclick="get(this.id);"></div>
+
+        <div class="squer" id="item7" onclick="get(this.id);"></div>
+        <div class="squer" id="item8" onclick="get(this.id);"></div>
+        <div class="squer" id="item9" onclick="get(this.id);"></div>
+    </div>
+
+    <div class="event">
+        <p id="x-wins">x : 0</p>
+        <p id="o-wins">o : 0</p>
+        <button onclick="resetWins()">Reset Wins</button>
+    </div>
+
+    <img src="images/img-1.png">
+
+
+    <h1 id="no"><ion-icon name="cellular-outline"></ion-icon> No internet</h1>
+    <a id="test" href="#"><ion-icon name="reload-outline"></ion-icon></a>
+
+
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
